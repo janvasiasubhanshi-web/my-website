@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Christmas Gifts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bgMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="page">
+    <div class="back-button" onclick="history.back()">Back</div>
+    <div class="gifts-container">
+      <div class="gift" onclick="openGift(1)">Gift 1</div>
+      <div class="gift" onclick="openGift(2)">Gift 2</div>
+      <div class="gift" onclick="openGift(3)">Gift 3</div>
+    </div>
+    <div id="giftContent"></div>
+    <canvas id="snowCanvas"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
